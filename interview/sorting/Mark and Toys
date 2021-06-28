@@ -1,0 +1,13 @@
+n, k = map(int, input().split())
+prices = list(sorted(map(int, input().split())))
+
+toys = 0
+
+for price in prices:
+    if price<=k:
+        k = k-price
+        toys = toys + 1
+        
+    else: 
+        break
+print(toys) 
