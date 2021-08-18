@@ -1,0 +1,8 @@
+from collections import deque
+    def levelOrder(self,root):
+        queue = self.deque([root]) if root else self.deque()
+        
+        while queue:
+            node = queue.popleft()
+            print(node.data, end=' ')
+                                        
