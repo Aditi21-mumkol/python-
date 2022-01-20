@@ -1,0 +1,5 @@
+def average(array):
+    a=sum(set(array))
+    b=len(set(array))
+    f=a/b
+    return f;
